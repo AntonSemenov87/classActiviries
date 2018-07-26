@@ -8,6 +8,9 @@
 }
 
 body {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
 }
 
 header {
@@ -18,25 +21,60 @@ header {
 }
 
 section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ccc;
 }
 
 #left {
+  background-color: #666;
+  color: white;
+  float: left;
+  width: 33.3%;
 }
 
 #middle {
+  background-color: #888;
+  color: white;
+  float: left;
+  width: 33.3%;
 }
 
 #right {
+  background-color: #666;
+  color: white;
+  float: left;
+  width: 33.3%;
 }
 
 #full {
+  background-color: #eee;
+  width: 100%;
+  overflow: auto;
+  clear: both;
 }
 
 #division {
+  background-color: #6ea3da;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 aside {
+  float: left;
+  background-color: #fff;
+  color: black;
+  float: left;
+  padding: 20px;
+  width: 33%;
+  height: 200px;
+  border: 1px solid #eee;
+
+  
 }
 
 footer {
+  background-color: #ccc;
+  clear: both;
+  padding: 20[x;]
 }
