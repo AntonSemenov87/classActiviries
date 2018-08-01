@@ -14,9 +14,15 @@
   </div>
   <h1> Please press any button:</br> P for Paper,</br> R for Rock </br> or S for Scissors to start playing</h1>
   <h2>
-    <p>Wins:</p>
-    <p>Losses: </p>
-    <p>Ties:</p>
+    <p>Wins:
+      <span id="wins-text">0</span>
+    </p>
+    <p>Losses:
+      <span id="losses-text">0</span>
+    </p>
+    <p>Ties:
+      <span id="ties-text">0</span>
+    </p>
   </h2>
 
   <script type="text/javascript">
@@ -72,7 +78,18 @@
         losses++
       }
 
+      console.log("Wins" + wins);
+      console.log("Losses" + losses);
+      console.log("Ties" + ties);
 
+      var userText = document.getElementById("wins-text");
+      userText.textContent = wins;
+
+      var userText = document.getElementById("losses-text");
+      userText.textContent = losses;
+
+      var userText = document.getElementById("ties-text");
+      userText.textContent = ties;
 
     };
     console.log("Wins" + wins);
