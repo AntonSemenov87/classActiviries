@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  <div id="game">
+
+  </div>
+  <h1> Please press any button:</br> P for Paper,</br> R for Rock </br> or S for Scissors to start playing</h1>
+  <h2>
+    <p>Wins:</p>
+    <p>Losses: </p>
+    <p>Ties:</p>
+  </h2>
+
+  <script type="text/javascript">
+
+    var ties = 0;
+    var losses = 0;
+    var wins = 0;
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function (event) {
+
+      // Determines which key was pressed.
+      var userGuess = event.key;
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
+
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
+
+      if (userGuess === computerGuess) {
+        alert("Tie!")
+        ties++
+      }
+      else if (userGuess === 'p' && computerGuess === 'r') {
+        alert("Win!")
+        wins++
+      }
+      else if (userGuess === 's' && computerGuess === 'r') {
+        alert("Lose!")
+        losses++
+      }
+      else if (userGuess === 'r' && computerGuess === 'p') {
+        alert("Lose!")
+        losses++
+      }
+      else if (userGuess === 'r' && computerGuess === 's') {
+        alert("Win!")
+        wins++
+      }
+      else if (userGuess === 's' && computerGuess === 'p') {
+        alert("Win!")
+        wins++
+      }
+      else if (userGuess === 'p' && computerGuess === 's') {
+        alert("Lose!")
+        losses++
+      }
+
+
+
+    };
+    console.log("Wins" + wins);
+    console.log("Losses" + losses);
+    console.log("Ties" + ties);
+  </script>
+
+</body>
+
+</html>

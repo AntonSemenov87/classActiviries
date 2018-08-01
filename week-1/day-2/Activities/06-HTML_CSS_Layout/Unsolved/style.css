@@ -1,0 +1,8 @@
+body {background-color: #efeee7; font: "Georgia",Times,serif; color: #333333}
+body {
+    margin: 150;
+    padding: 200;
+  }
+header{background-color: #333333}
+h1{background-color: #eee; font-size: 28px}
+h2{font-size: 24px}
