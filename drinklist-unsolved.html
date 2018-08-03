@@ -42,7 +42,16 @@
 
     // forLoop
 
+    var newUl = document.createElement('ul');
+    for (var index = 0; index < drinkList.length; index++) {
+      var element = drinkList[index];
+    }
+    var newLi = document.reateElement('li');
+    newLi.textContent = element;
 
+    newUl.appendChild(newLi);
+
+    emptyDiv.appendChild(newUl);
 
 
     // forEach
